@@ -2,6 +2,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import HeaderDetails from "./components/HeaderDetails";
 import Header from "./components/Header";
+import MovieGrid from "./components/MovieGrid";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         />
       </GridItem>
       <GridItem pl="2" bg="green.300" area={"main"}>
-        Main
+        <MovieGrid />
       </GridItem>
       <GridItem pl="2" bg="blue.300" area={"footer"}>
         Footer
