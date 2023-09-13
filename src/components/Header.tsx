@@ -1,24 +1,22 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import poster from "../assets/Poster.png";
-import NavBar from "./NavBar";
 
-const header: React.FC = () => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const header = ({ children }: Props) => {
   return (
-    <Box position="relative">
-      <Image
-        src={poster}
-        alt="Background"
-        objectFit="cover"
-        width="100%"
-        zIndex={-1}
-        position="absolute"
-        top={0}
-        left={0}
-      />
-      {}
-      <Box position="relative" zIndex={1}>
-        {<NavBar />}
-      </Box>
+    <Box
+      backgroundImage={`url(${poster})`}
+      backgroundSize="cover"
+      backgroundRepeat="no-repeat"
+      width="100vw"
+      height="100vh"
+      position="relative"
+      pt={5}
+    >
+      {children}
     </Box>
   );
 };

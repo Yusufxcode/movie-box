@@ -1,5 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
-import Header from "./components/header";
+import NavBar from "./components/NavBar";
+import HeaderDetails from "./components/HeaderDetails";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -7,12 +9,16 @@ function App() {
       templateAreas={`"header header"
                   "main main"
                   "footer footer"`}
-      gap={4}
-      position="relative"
-      zIndex={1}
     >
       <GridItem area={"header"}>
-        <Header />
+        <Header
+          children={
+            <>
+              <NavBar />
+              <HeaderDetails />
+            </>
+          }
+        />
       </GridItem>
       <GridItem pl="2" bg="green.300" area={"main"}>
         Main
