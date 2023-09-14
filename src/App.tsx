@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import HeaderDetails from "./components/HeaderDetails";
 import Header from "./components/Header";
 import MovieGrid from "./components/MovieGrid";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,11 +22,11 @@ function App() {
           }
         />
       </GridItem>
-      <GridItem pl="2" bg="green.300" area={"main"}>
+      <GridItem pl="2" area={"main"}>
         <MovieGrid />
       </GridItem>
-      <GridItem pl="2" bg="blue.300" area={"footer"}>
-        Footer
+      <GridItem pl="2" area={"footer"}>
+        <Footer />
       </GridItem>
     </Grid>
   );
