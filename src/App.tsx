@@ -4,6 +4,7 @@ import HeaderDetails from "./components/HeaderDetails";
 import Header from "./components/Header";
 import MovieGrid from "./components/MovieGrid";
 import Footer from "./components/Footer";
+import MovieDetailsPage from "./components/MovieDetailsPage";
 
 function App() {
   return (

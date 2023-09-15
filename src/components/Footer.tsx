@@ -6,7 +6,7 @@ import youtubeIcon from "../assets/youtubeIcon.png";
 
 const Footer = () => {
   return (
-    <Box display="grid" placeItems="center">
+    <Box display="grid" placeItems="center" mt={50}>
       <HStack gap={10}>
         <Image src={FacebookIcon} />
         <Image src={instagramIcon} />
